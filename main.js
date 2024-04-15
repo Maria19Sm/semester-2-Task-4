@@ -7,7 +7,7 @@ const port = 8000;
 const server = http.createServer(
     function(req, res) {
         try {
-            fs.readFile('interstellar.html', 'utf8', function(err, data) {
+            fs.readFile('delivery.html', 'utf8', function(err, data) {
                 if (err) {
                     res.writeHead(500, { 'Content-Type': 'text/plain' });
                     res.end('Помилка при читанні файлу: ' + err);
